@@ -30,7 +30,7 @@ You can submit your style in the following way:
 	</section>
 ```
 3. Choose a Shakespeare character name as title and replace it with "yourstyle" (id, title, menu--[name])
-4. Add your styles to the ___component.css__ right before the media query. Please don't forget the -webkit- prefixed properties where necessary.
+4. Add your styles to the ___component.css___ right before the media query. Please don't forget the -webkit- prefixed properties where necessary.
 5. Add your name and social/website link to the info paragraph.
 6. Please credit if you base your style on an existing design. You can do so by adding a paragraph with the class `info` after your menu. 
 
