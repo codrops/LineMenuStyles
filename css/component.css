@@ -1553,6 +1553,61 @@
 
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
 
+/* Puck */
+.menu--puck .menu__link {
+	position: relative;
+	display: block;
+	margin: 0 1em;
+	text-align: center;
+	color: #929292;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.menu--puck .menu__link:hover,
+.menu--puck .menu__link:focus {
+	color: #828282;
+}
+
+.menu--puck .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu--puck .menu__link::before,
+.menu--puck .menu__link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	background: #d94f5c;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.menu--puck .menu__link::before {
+	bottom: -5px;
+	height: 2px;
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s;
+}
+
+.menu--puck .menu__link::after {
+	bottom: 0;
+}
+
+.menu--puck .menu__item--current .menu__link::before,
+.menu--puck .menu__item--current .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0, 1.54, .34, 1);
+	transition-timing-function: cubic-bezier(0, 1.54, .34, 1);
+	-webkit-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
 /* Media queries */
 
 /* Stack items for smaller screens */
