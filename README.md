@@ -6,6 +6,8 @@ An open collection of menu styles that use the line as a creative design element
 
 [Demo](http://tympanus.net/Development/LineMenuStyles/)
 
+![Line Menu Styles](http://tympanus.net/codrops/wp-content/uploads/2016/01/menustyle.gif)
+
 ## Contribute
 
 _Please don't add any other changes to a pull request for new styles. If you want to contribute some other updates to the repo, make sure to add those in a different pull request._
