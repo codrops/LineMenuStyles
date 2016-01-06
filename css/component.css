@@ -1551,8 +1551,6 @@
 	transform: scale3d(1, 1, 1);
 }
 
-/* YOUR STYLE (Shakespeare character name) see README.md for details */
-
 /* Puck */
 .menu--puck .menu__link {
 	position: relative;
@@ -1607,6 +1605,8 @@
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
+
+/* YOUR STYLE (Shakespeare character name) see README.md for details */
 
 /* Media queries */
 
