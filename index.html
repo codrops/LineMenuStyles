@@ -282,6 +282,21 @@
 				</nav>
 				<p class="info">Style created by <a href="http://edensg.me">Eden S.-G.</a></p>
 			</section>
+			<section class="section section--menu" id="Titania">
+				<h2 class="section__title">Titania</h2>
+				<span class="link-copy"></span>
+				<nav class="menu menu--titania">
+						<ul class="menu__list">
+								<li class="menu__item menu__item--current"><a class="menu__link">Home</a></li>
+								<li class="menu__item"><a class="menu__link">Portfolio</a></li>
+								<li class="menu__item"><a class="menu__link">Blog</a></li>
+								<li class="menu__item"><a class="menu__link">Shop</a></li>
+								<li class="menu__item"><a class="menu__link">Contact</a></li>
+								<li class="menu__lines"></li>
+						</ul>
+				</nav>
+				<p class="info">Style created by <a href="https://twitter.com/rileyjshaw">rileyjshaw</a></p>
+		</section>
 			<!-- Check out the README.md for details on how to contribute -->
 			<!-- copy this section -->
 			<section class="section section--menu" id="Yourstyle">
@@ -333,7 +348,7 @@
 							ev.preventDefault();
 
 							var item = ev.target.parentNode; // li
-							
+
 							// return if already current
 							if( classie.has(item, 'menu__item--current') ) {
 								return false;
@@ -343,7 +358,7 @@
 							// set current
 							classie.add(item, 'menu__item--current');
 						};
-					
+
 					[].slice.call(menuItems).forEach(function(el) {
 						el.addEventListener('click', setCurrent);
 					});
