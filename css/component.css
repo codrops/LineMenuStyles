@@ -1770,6 +1770,104 @@
 	}
 }
 
+/* Rplus */
+.menu--rplus .menu__item {
+	position: relative;
+}
+
+.menu--rplus .menu__link {
+	position: relative;
+	min-width: 7rem;
+	height: 50px;
+	padding: 1em 1.5em;
+	text-align: center;
+	color: #929292;
+	opacity: .7;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.menu--rplus .menu__item::before,
+.menu--rplus .menu__item::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	border-style: solid;
+	color: #d94f5c;
+	-webkit-transition: -webkit-transform 0.2s cubic-bezier(1, 0.6, 0, 1);
+	transition: -webkit-transform 0.2s cubic-bezier(1, 0.6, 0, 1);
+	transition: transform 0.2s cubic-bezier(1, 0.6, 0, 1);
+	transition: transform 0.2s cubic-bezier(1, 0.6, 0, 1), -webkit-transform 0.2s cubic-bezier(1, 0.6, 0, 1);
+}
+
+.menu--rplus .menu__item::before {
+	border-width: 2px 0 0;
+	-webkit-transform: translateY(calc(100% - 2px));
+	transform: translateY(calc(100% - 2px));
+}
+
+.menu--rplus .menu__item::after {
+	left: -1px; /* for border-collapse */
+	right: -1px;
+	border-width: 0 2px;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.menu--rplus .menu__item.menu__item--current::before {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
+	transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
+}
+
+.menu--rplus .menu__item.menu__item--current::after {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
+	transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
+}
+
+.menu--rplus .menu__item--current .menu__link,
+.menu--rplus .menu__link:hover,
+.menu--rplus .menu__link:focus {
+	opacity: 1;
+}
+
+.menu--rplus .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+@media screen and (max-width: 55em) {
+	.menu--rplus .menu__item {
+		margin: 0;
+	}
+
+	.menu--rplus .menu__item::before {
+		border-width: 0 2px 0 0;
+		-webkit-transform: translateX(calc(2px - 100%));
+		transform: translateX(calc(2px - 100%));
+	}
+
+	.menu--rplus .menu__item::after {
+		left: 0;
+		right: 0;
+		top: -1px;
+		bottom: -1px;
+		border-width: 2px 0;
+		-webkit-transform: scale(0, 1);
+		transform: scale(0, 1);
+		-webkit-transform-origin: 0% 50%;
+		transform-origin: 0% 50%;
+	}
+}
+
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
 
 /* Media queries */
