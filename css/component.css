@@ -1770,12 +1770,12 @@
 	}
 }
 
-/* Rplus */
-.menu--rplus .menu__item {
+/* bagot (by @RplusTW) */
+.menu--bagot .menu__item {
 	position: relative;
 }
 
-.menu--rplus .menu__link {
+.menu--bagot .menu__link {
 	position: relative;
 	min-width: 7rem;
 	height: 50px;
@@ -1787,8 +1787,8 @@
 	transition: opacity .3s;
 }
 
-.menu--rplus .menu__item::before,
-.menu--rplus .menu__item::after {
+.menu--bagot .menu__item::before,
+.menu--bagot .menu__item::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1804,13 +1804,13 @@
 	transition: transform 0.2s cubic-bezier(1, 0.6, 0, 1), -webkit-transform 0.2s cubic-bezier(1, 0.6, 0, 1);
 }
 
-.menu--rplus .menu__item::before {
+.menu--bagot .menu__item::before {
 	border-width: 2px 0 0;
 	-webkit-transform: translateY(calc(100% - 2px));
 	transform: translateY(calc(100% - 2px));
 }
 
-.menu--rplus .menu__item::after {
+.menu--bagot .menu__item::after {
 	left: -1px; /* for border-collapse */
 	right: -1px;
 	border-width: 0 2px;
@@ -1820,42 +1820,42 @@
 	transform-origin: 50% 100%;
 }
 
-.menu--rplus .menu__item.menu__item--current::before {
+.menu--bagot .menu__item.menu__item--current::before {
 	-webkit-transform: translate(0, 0);
 	transform: translate(0, 0);
 	-webkit-transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
 	transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
 }
 
-.menu--rplus .menu__item.menu__item--current::after {
+.menu--bagot .menu__item.menu__item--current::after {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
 	transition-timing-function: cubic-bezier(1, 0.6, 0, 1.22);
 }
 
-.menu--rplus .menu__item--current .menu__link,
-.menu--rplus .menu__link:hover,
-.menu--rplus .menu__link:focus {
+.menu--bagot .menu__item--current .menu__link,
+.menu--bagot .menu__link:hover,
+.menu--bagot .menu__link:focus {
 	opacity: 1;
 }
 
-.menu--rplus .menu__item--current .menu__link {
+.menu--bagot .menu__item--current .menu__link {
 	color: #d94f5c;
 }
 
 @media screen and (max-width: 55em) {
-	.menu--rplus .menu__item {
+	.menu--bagot .menu__item {
 		margin: 0;
 	}
 
-	.menu--rplus .menu__item::before {
+	.menu--bagot .menu__item::before {
 		border-width: 0 2px 0 0;
 		-webkit-transform: translateX(calc(2px - 100%));
 		transform: translateX(calc(2px - 100%));
 	}
 
-	.menu--rplus .menu__item::after {
+	.menu--bagot .menu__item::after {
 		left: 0;
 		right: 0;
 		top: -1px;
