@@ -1770,7 +1770,146 @@
 	}
 }
 
-/* YOUR STYLE (Shakespeare character name) see README.md for details */
+/* Luce (by @ryjohnson) */
+.menu--luce .menu__item {
+	position: relative;
+	margin: 1em;
+}
+
+.menu--luce .menu__link {
+	position: relative;
+	display: block;
+	min-width: 120px;
+	text-align: center;
+	color: #b5b5b5;
+	-webkit-transition: color 0.6s;
+	transition: color 0.6s;
+}
+
+.menu--luce .menu__link:hover,
+.menu--luce .menu__link:focus {
+	color: #929292;
+}
+
+.menu--luce .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu--luce .menu__item::before,
+.menu--luce .menu__item::after,
+.menu--luce .menu__link::before,
+.menu--luce .menu__link::after {
+	content: '';
+	position: absolute;
+	background: #b5b5b5;
+	-webkit-transition: -webkit-transform 0.25s, background .75s;
+	transition: transform 0.25s, background .75s;
+	-webkit-transition-timing-function: cubic-bezier(1, 0.53, 0.79, 0.68);
+	transition-timing-function: cubic-bezier(1, 0.53, 0.79, 0.68);
+}
+
+/* left and right line */
+.menu--luce .menu__item::before,
+.menu--luce .menu__item::after {
+	top: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+}
+
+/* left line */
+.menu--luce .menu__item::before {
+	left: 0;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+/* right line */
+.menu--luce .menu__item::after {
+	right: 0;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+/* top and bottom line */
+.menu--luce .menu__link::before,
+.menu--luce .menu__link::after {
+	left: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+}
+
+/* top line */
+.menu--luce .menu__link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+/* bottom line */
+.menu--luce .menu__link::after {
+	bottom: 0;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+
+
+
+/* Delays (first reverse, then current) */
+
+/* These rules can be simplified, but let's keep it for better readability */
+
+/* bottom line */
+.menu--luce .menu__item .menu__link::after {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--luce .menu__item--current .menu__link::after {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+/* left line */
+.menu--luce .menu__item::before {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.menu--luce .menu__item--current::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/* top line */
+.menu--luce .menu__item .menu__link::before {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.menu--luce .menu__item--current .menu__link::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/* right line */
+.menu--luce .menu__item--current::after {
+	-webkit-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+}
+
+.menu--luce .menu__item--current::before,
+.menu--luce .menu__item--current::after,
+.menu--luce .menu__item--current .menu__link::before,
+.menu--luce .menu__item--current .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	background: #d94f5c;
+}
+
 
 /* Media queries */
 
