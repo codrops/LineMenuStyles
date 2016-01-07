@@ -1770,6 +1770,74 @@
 	}
 }
 
+/* Shylock (by @benhanks040888) */
+.menu--shylock .menu__link {
+	position: relative;
+	margin: 0 1em;
+	padding-left: 0;
+	padding-right: 0;
+	color: #b5b5b5;
+	-webkit-transition: color .4s;
+	        transition: color .4s;
+}
+
+.menu--shylock .menu__item--current .menu__link,
+.menu--shylock .menu__item--current .menu__link:hover,
+.menu--shylock .menu__item--current .menu__link:focus {
+	color: #d94f5c;
+}
+
+.menu--shylock .menu__item--current .menu__link::after,
+.menu--shylock .menu__item--current .menu__link::before {
+	-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1);
+}
+
+.menu--shylock .menu__item--current .menu__link::before {
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
+}
+
+.menu--shylock .menu__link:hover,
+.menu--shylock .menu__link:focus {
+	color: #b5b5b5;
+}
+
+.menu--shylock .menu__link:hover::before,
+.menu--shylock .menu__link:focus::before {
+	-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1);
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
+}
+
+
+.menu--shylock .menu__link::before,
+.menu--shylock .menu__link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	-webkit-transform: scale3d(0, 1, 1);
+					transform: scale3d(0, 1, 1);
+	-webkit-transition: transform .4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	        transition: transform .4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-webkit-transform-origin: center left;
+	        transform-origin: center left;
+}
+
+.menu--shylock .menu__link::before {
+	background: #b5b5b5;
+	-webkit-transition-delay: .4s;
+	        transition-delay: .4s;
+}
+
+.menu--shylock .menu__link::after {
+	background: #d94f5c;	
+}
+
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
 
 /* Media queries */
