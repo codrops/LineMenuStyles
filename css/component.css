@@ -138,7 +138,6 @@
 		-webkit-transform: translate3d(0, 12em, 0);
 		transform: translate3d(0, 12em, 0);
 	}
-
 }
 
 /* Sebastian */
@@ -837,7 +836,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 }
 
 @keyframes anim-adrian {
@@ -858,7 +856,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 }
 
 /* Francisco */
@@ -939,7 +936,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 }
 
 @keyframes anim-francisco {
@@ -960,7 +956,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 }
 
 /* Trinculo */
@@ -1048,7 +1043,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 }
 
 @keyframes anim-trinculo {
@@ -1078,7 +1072,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-
 }
 
 /* Stephano */
@@ -1627,8 +1620,8 @@
 
 .menu--titania .menu__item--current .menu__link {
 	color: #d94f5c;
-	-webkit-transition: color 0.5s 0.2s;
-	transition: color 0.5s 0.2s;
+	-webkit-transition: color 0.7s 0.2s;
+	transition: color 0.7s 0.2s;
 }
 
 .menu--titania .menu__lines {
@@ -1647,6 +1640,7 @@
 	transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
 }
 
+/* vertical lines */
 .menu--titania .menu__lines::before,
 .menu--titania .menu__lines::after {
 	content: '';
@@ -1655,7 +1649,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border: 2px solid #d94f5c;    /* vertical lines */
+	border: 2px solid #d94f5c;
 	border-width: 0 2px;
 	-webkit-transform-origin: 0% 50%;
 	transform-origin: 0% 50%;
@@ -1665,16 +1659,16 @@
 .menu--titania .menu__lines::before {
 	-webkit-transform: scale3d(1, 0, 1);
 	transform: scale3d(1, 0, 1);
-	-webkit-transition: -webkit-transform 0.2s;
-	transition: transform 0.2s;
+	-webkit-transition: -webkit-transform 0.2s ease;
+	transition: transform 0.2s ease;
 }
 
 /* animates back in at transition end */
 .menu--titania .menu__lines::after {
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
-	-webkit-transition: -webkit-transform 0.2s 0.56s;
-	transition: transform 0.2s 0.56s;
+	-webkit-transition: -webkit-transform 0.2s ease 0.7s;
+	transition: transform 0.2s ease 0.7s;
 }
 
 .menu--titania .menu__item:active:not(.menu__item--current) ~ .menu__lines::before,
@@ -1724,10 +1718,9 @@
 		border-width: 0 2px;
 	}
 
+	/* horizontal lines */
 	.menu--titania .menu__lines::before,
 	.menu--titania .menu__lines::after {
-
-		/* horizontal lines */
 		border-width: 2px 0;
 		-webkit-transform-origin: 50% 0%;
 		transform-origin: 50% 0%;
@@ -1767,7 +1760,6 @@
 		-webkit-transform: translate3d(0, 400%, 0);
 		transform: translate3d(0, 400%, 0);
 	}
-
 }
 
 /* bagot (by @RplusTW) */
@@ -1800,7 +1792,6 @@
 	border-style: solid;
 	-webkit-transition: -webkit-transform 0.2s cubic-bezier(1, 0.6, 0, 1);
 	transition: transform 0.2s cubic-bezier(1, 0.6, 0, 1);
-	
 }
 
 .menu--bagot .menu__item::before {
@@ -1865,7 +1856,6 @@
 		-webkit-transform-origin: 0% 50%;
 		transform-origin: 0% 50%;
 	}
-
 }
 
 /* Shylock (by @benhanks040888) */
@@ -2013,7 +2003,6 @@
 		-webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 	}
-
 }
 
 @keyframes anim-cordelia-top {
@@ -2040,7 +2029,6 @@
 		-webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 	}
-
 }
 
 @-webkit-keyframes anim-cordelia-bottom {
@@ -2067,7 +2055,6 @@
 		-webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 	}
-
 }
 
 @keyframes anim-cordelia-bottom {
@@ -2094,7 +2081,6 @@
 		-webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 	}
-
 }
 
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
@@ -2107,5 +2093,4 @@
 		display: block;
 		margin: 0 auto;
 	}
-
 }
