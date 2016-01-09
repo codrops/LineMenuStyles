@@ -2372,7 +2372,6 @@
 .menu--juliet .menu__item--current::before,
 .menu--juliet .menu__item--current::after {
     position: absolute;
-    top: 95%;
     left: 50%;
     width: 0;
     height: 0;
@@ -2408,22 +2407,24 @@
 
 
 .menu--juliet .menu__item::before {
+	top: 95%;
 	margin-left: -9px;
-    border-width: 10px;
-    border-top-color: #b5b5b5;
+	border-width: 10px;
+	border-top-color: #b5b5b5;
 }
 
 .menu--juliet .menu__item--current::before {
 	margin-left: -9px;
-    border-width: 10px;
-    border-top-color: #d94f5c;
+	border-width: 10px;
+	border-top-color: #d94f5c;
 }
 
 .menu--juliet .menu__item::after,
 .menu--juliet .menu__item--current::after {
+	top: 94%;
 	margin-left: -5px;
-    border-width: 6px;
-    border-top-color: #2a282b;
+	border-width: 6px;
+	border-top-color: #2a282b;
 }
 
 .menu--juliet .menu__link {
