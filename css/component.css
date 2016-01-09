@@ -2423,7 +2423,7 @@
 .menu--juliet .menu__item--current::after {
 	margin-left: -5px;
     border-width: 6px;
-    border-top-color: #fff;
+    border-top-color: #2a282b;
 }
 
 .menu--juliet .menu__link {
