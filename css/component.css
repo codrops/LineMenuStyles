@@ -2459,8 +2459,8 @@
 	color: #b5b5b5;
 }
 
-.menu--juliet .menu__link:hover::before,
-.menu--juliet .menu__link:focus::before {
+.menu--juliet .menu__item:hover .menu__link::before,
+.menu--juliet .menu__item:focus .menu__link::before {
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 	-webkit-transition-delay: 0s;
