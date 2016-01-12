@@ -2495,6 +2495,48 @@
 
 /* End: Juliet Styles */
 
+/* Falstaff Styles */
+
+.menu--falstaff .menu__item {
+    position: relative;
+    margin: 20px;
+}
+
+.menu--falstaff .menu__link::before,
+.menu--falstaff .menu__item--current::before {
+	height: 4px;
+  background: transparent;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: background 1s, top 0.5s cubic-bezier(0, 1, 1, 0);
+  transition: background 1s, top 0.5s cubic-bezier(0, 1, 1, 0);
+}
+
+.menu--falstaff .menu__link {
+	-webkit-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+  padding: 10px 0px 8px 0;
+}
+
+.menu--falstaff .menu__link:hover {
+	color: #d94f5c;
+}
+
+.menu--falstaff .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu--falstaff .menu__item--current .menu__link::before {
+	background: #d94f5c;
+  top: 100%;
+}
+
+/* End Falstaff Styles */
+
+
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
 /* (Please copy these two lines and insert after your custom styles) */
 
