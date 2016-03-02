@@ -2368,7 +2368,7 @@
 }
 
 .menu--juliet .menu__item::before,
-.menu--juliet .menu__item::after, 
+.menu--juliet .menu__item::after,
 .menu--juliet .menu__item--current::before,
 .menu--juliet .menu__item--current::after {
     position: absolute;
@@ -2494,6 +2494,45 @@
 }
 
 /* End: Juliet Styles */
+
+/* Invulner Styles */
+
+.menu--invulner .menu__link {
+	position: relative;
+	-webkit-transition: color .4s ease-in;
+	transition: color .4s ease-in;
+}
+
+.menu--invulner .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu--invulner .menu__link::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	border: 2px solid #d94f5c;
+	-webkit-transition: all .5s cubic-bezier(.52,.27,.4,1.52);
+	transition: all .5s cubic-bezier(.52,.27,.4,1.52);
+	opacity: 0;
+}
+
+.menu--invulner .menu__item--current .menu__link::before {
+	left: 0;
+	top: 0;
+	margin-top: 0;
+	margin-left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	opacity: 1;
+}
+
+/* End: Invulner Styles */
 
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
 /* (Please copy these two lines and insert after your custom styles) */
