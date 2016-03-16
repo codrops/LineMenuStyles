@@ -2362,22 +2362,22 @@
 /* Juliet Styles */
 
 .menu--juliet .menu__item {
-    position: relative;
-    -webkit-transition: color .25s;
-    transition: color .25s;
+	position: relative;
+	-webkit-transition: color .25s;
+	transition: color .25s;
 }
 
 .menu--juliet .menu__item::before,
 .menu--juliet .menu__item::after,
 .menu--juliet .menu__item--current::before,
 .menu--juliet .menu__item--current::after {
-    position: absolute;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: solid transparent;
-    content: '';
-    pointer-events: none;
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
 }
 .menu--juliet .menu__item::before,
 .menu--juliet .menu__item::after {
@@ -2533,6 +2533,66 @@
 }
 
 /* End: Invulner Styles */
+
+/* tantalid Styles */
+
+.menu--tantalid .menu__link {
+	color: #929292;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: color .4s ease-in;
+	transition: color .4s ease-in;
+}
+
+.menu--tantalid .menu__link:hover {
+	color: #fff;
+}
+
+.menu--tantalid .menu__item--current .menu__link {
+	color: #d94f5c;
+	overflow: visible;
+}
+
+.menu--tantalid .menu__link::before,
+.menu--tantalid .menu__link::after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	border: 2px solid #d94f5c;
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.3s, width 0.4s;
+	transition: transform .4s, opacity 0.3s, width .4s;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+
+.menu--tantalid .menu__link::before {
+	top: 0;
+	left: 0;
+	border-width: 2px 0 0 2px;
+	-webkit-transform: translate3d(-150%, 70%, 0) rotate(-30deg);
+	transform: translate3d(-150%, 70%, 0) rotate(-30deg);
+}
+
+.menu--tantalid .menu__link::after {
+	right: 0;
+	bottom: 0;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: translate3d(150%, -70%, 0) rotate(-30deg);
+	transform: translate3d(150%, -70%, 0) rotate(-30deg);
+}
+
+.menu--tantalid .menu__item--current .menu__link::before,
+.menu--tantalid .menu__item--current .menu__link::after {
+	width: 80%;
+	height: 80%;
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+	transform: translate3d(0, 0, 0) rotate(0deg);
+}
+
+/* End: tantalid Styles */
 
 /* YOUR STYLE (Shakespeare character name) see README.md for details */
 /* (Please copy these two lines and insert after your custom styles) */
