@@ -1,0 +1,22 @@
+{
+  "name": "line-menu-styles",
+  "homepage": "https://github.com/codrops/LineMenuStyles",
+  "authors": [
+    "Codrops <http://www.codrops.com/>"
+  ],
+  "description": "An open collection of menu styles that use the line as creative design element. http://tympanus.net/Development/LineMenuStyles/",
+  "main": "README.md",
+  "moduleType": [],
+  "keywords": [
+    "line",
+    "menu",
+    "style",
+    "css",
+    "js"
+  ],
+  "license": "http://tympanus.net/codrops/licensing/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:codrops/LineMenuStyles.git"
+  }
+}
